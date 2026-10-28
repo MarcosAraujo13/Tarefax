@@ -4,36 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 
     <title>Tarefax</title>
 </head>
 
 <body>
-    <header class="cabeçalho">
-        <h1>Tarefax</h1>
-        <p>Organize suas tarefas</p>
-    </header>
+    <main class="container">
+        <header class="cabeçalho">
+            <h1>Tarefax</h1>
+            <p>Organize suas tarefas</p>
+        </header>
 
-    <form id="formTarefas" class="formTarefas">
-        <label for="nome">Qual o nome da sua tarefa?</label>
-        <input type="text" id="nome" required>
+        <form id="formTarefas" class="formTarefas">
+            <label for="nome">Qual o nome da sua tarefa?</label>
+            <input type="text" id="nome" required>
 
-        <label for="descricao">Descrição da tarefa</label>
-        <input type="text" id="descricao" required>
+            <label for="descricao">Descrição da tarefa</label>
+            <input type="text" id="descricao" required>
 
-        <label for="dataEntrega">Data de entrega</label>
-        <input type="date" id="dataEntrega" required>
+            <label for="dataEntrega">Data de entrega</label>
+            <input type="date" id="dataEntrega" required>
 
-        <button id="botaoEnviar"  type="submit">Adicionar</button>
-    </form>
+            <button id="botaoEnviar" type="submit">Adicionar</button>
+        </form>
 
-    <section class="listaTarefas">
-        <h2>Minhas Tarefas</h2>
-        <ul id="listaTarefas"></ul>
-    </section>
+        <section class="listaTarefas">
+            <h2>Minhas Tarefas</h2>
 
-    <button id="botaoApagar" type="button"> Apagar tarefas</button>
+            <div id="filtros" class="filtros" role="group" aria-label="Filtrar tarefas">
+                <button type="button" class="filtro ativo" data-filtro="todas" aria-pressed="true">Todas</button>
+                <button type="button" class="filtro" data-filtro="pendentes" aria-pressed="false">Pendentes</button>
+                <button type="button" class="filtro" data-filtro="concluidas" aria-pressed="false">Concluídas</button>
+            </div>
+
+            <ul id="listaTarefas"></ul>
+        </section>
+
+        <section class="opcoes">
+            <button id="botaoExcluirConcluidas" type="button">Excluir concluídas</button>
+            <button id="botaoApagar" type="button">Apagar tudo</button>
+        </section>
+    </main>
 
     <script type="module" src="./JS/script.js"></script>
 </body>
