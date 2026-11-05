@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Preview dos Ícones Tarefax</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #e2e8f0;
+      padding: 30px;
+      color: #1e293b;
+    }
+    h1 { text-align: center; margin-bottom: 24px; color: #0f766e; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .card {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 14px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+      text-align: center;
+    }
+    .card h2 { font-size: 1.1rem; color: #0f766e; margin-top: 0; }
+    .preview-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      margin: 16px 0;
+      padding: 16px;
+      background: #f8fafc;
+      border-radius: 10px;
+    }
+    .tab-sim-light, .tab-sim-dark {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 8px 8px 0 0;
+      font-size: 13px;
+      font-weight: 500;
+      width: 160px;
+      margin: 8px auto;
+    }
+    .tab-sim-light {
+      background: #ffffff;
+      color: #1e293b;
+      box-shadow: 0 -2px 6px rgba(0,0,0,0.05);
+      border: 1px solid #e2e8f0;
+      border-bottom: none;
+    }
+    .tab-sim-dark {
+      background: #24292e;
+      color: #e2e8f0;
+    }
+    svg { vertical-align: middle; }
+  </style>
+</head>
+<body>
+  <h1>Opções de Ícone para Tarefax (Favicon)</h1>
+  <div class="grid">
+    <!-- Opção 1: Prancheta Checklist 2 tarefas (Super legível a 16px) -->
+    <div class="card">
+      <h2>Opção 1: Prancheta Checklist (2 tarefas)</h2>
+      <p style="font-size: 0.85rem; color: #64748b;">Máxima clareza em tamanho miniatura de aba (16x16)</p>
+      <div class="preview-box">
+        <div><small>64px</small><br>
+          <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+            <defs>
+              <linearGradient id="g1_lg" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#14b8a6"/>
+                <stop offset="100%" stop-color="#0f766e"/>
+              </linearGradient>
+            </defs>
+            <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#g1_lg)"/>
+            <rect x="12" y="11" width="40" height="43" rx="7" fill="#ffffff"/>
+            <rect x="23" y="6" width="18" height="9" rx="4.5" fill="#0b3b36"/>
+            <rect x="27" y="8" width="10" height="3" rx="1.5" fill="#5eead4"/>
+            <!-- Tarefa 1 concluída -->
+            <path d="M18 24 L22.5 28.5 L31 19.5" stroke="#0f766e" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="35" y="22" width="11" height="4" rx="2" fill="#64748b"/>
+            <!-- Tarefa 2 concluída -->
+            <path d="M18 39 L22.5 43.5 L31 34.5" stroke="#0f766e" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="35" y="37" width="11" height="4" rx="2" fill="#64748b"/>
+          </svg>
+        </div>
+        <div><small>32px</small><br>
+          <svg width="32" height="32" viewBox="0 0 64 64" fill="none">
+            <use href="#opt1"/>
+          </svg>
+        </div>
+        <div><small>16px</small><br>
+          <svg width="16" height="16" viewBox="0 0 64 64" fill="none">
+            <use href="#opt1"/>
+          </svg>
+        </div>
+      </div>
+      
+      <!-- Simulação de aba clara -->
+      <div class="tab-sim-light">
+        <svg width="16" height="16" viewBox="0 0 64 64" fill="none">
+          <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#g1_lg)"/>
+          <rect x="12" y="11" width="40" height="43" rx="7" fill="#ffffff"/>
+          <rect x="23" y="6" width="18" height="9" rx="4.5" fill="#0b3b36"/>
+          <rect x="27" y="8" width="10" height="3" rx="1.5" fill="#5eead4"/>
+          <path d="M18 24 L22.5 28.5 L31 19.5" stroke="#0f766e" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="35" y="22" width="11" height="4" rx="2" fill="#64748b"/>
+          <path d="M18 39 L22.5 43.5 L31 34.5" stroke="#0f766e" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="35" y="37" width="11" height="4" rx="2" fill="#64748b"/>
+        </svg>
+        <span>Tarefax</span>
+      </div>
+
+      <!-- Simulação de aba escura -->
+      <div class="tab-sim-dark">
+        <svg width="16" height="16" viewBox="0 0 64 64" fill="none">
+          <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#g1_lg)"/>
+          <rect x="12" y="11" width="40" height="43" rx="7" fill="#ffffff"/>
+          <rect x="23" y="6" width="18" height="9" rx="4.5" fill="#0b3b36"/>
+          <rect x="27" y="8" width="10" height="3" rx="1.5" fill="#5eead4"/>
+          <path d="M18 24 L22.5 28.5 L31 19.5" stroke="#0f766e" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="35" y="22" width="11" height="4" rx="2" fill="#64748b"/>
+          <path d="M18 39 L22.5 43.5 L31 34.5" stroke="#0f766e" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="35" y="37" width="11" height="4" rx="2" fill="#64748b"/>
+        </svg>
+        <span>Tarefax</span>
+      </div>
+    </div>
+
+    <!-- Opção 2: Prancheta com 1 Concluída + 1 Pendente -->
+    <div class="card">
+      <h2>Opção 2: Checklist (Concluída + Pendente)</h2>
+      <p style="font-size: 0.85rem; color: #64748b;">Mostra o progresso das tarefas</p>
+      <div class="preview-box">
+        <div><small>64px</small><br>
+          <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+            <defs>
+              <linearGradient id="g2_lg" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#14b8a6"/>
+                <stop offset="100%" stop-color="#0f766e"/>
+              </linearGradient>
+            </defs>
+            <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#g2_lg)"/>
+            <rect x="12" y="11" width="40" height="43" rx="7" fill="#ffffff"/>
+            <rect x="23" y="6" width="18" height="9" rx="4.5" fill="#0b3b36"/>
+            <rect x="27" y="8" width="10" height="3" rx="1.5" fill="#5eead4"/>
+            <!-- Tarefa 1 concluída -->
+            <path d="M18 24 L22.5 28.5 L31 19.5" stroke="#0f766e" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="35" y="22" width="11" height="4" rx="2" fill="#64748b"/>
+            <!-- Tarefa 2 pendente (checkbox) -->
+            <rect x="18" y="34.5" width="10" height="10" rx="3" stroke="#0f766e" stroke-width="2.5" fill="none"/>
+            <rect x="35" y="37.5" width="11" height="4" rx="2" fill="#94a3b8"/>
+          </svg>
+        </div>
+      </div>
+      
+      <div class="tab-sim-light">
+        <svg width="16" height="16" viewBox="0 0 64 64" fill="none">
+          <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#g2_lg)"/>
+          <rect x="12" y="11" width="40" height="43" rx="7" fill="#ffffff"/>
+          <rect x="23" y="6" width="18" height="9" rx="4.5" fill="#0b3b36"/>
+          <rect x="27" y="8" width="10" height="3" rx="1.5" fill="#5eead4"/>
+          <path d="M18 24 L22.5 28.5 L31 19.5" stroke="#0f766e" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="35" y="22" width="11" height="4" rx="2" fill="#64748b"/>
+          <rect x="18" y="34.5" width="10" height="10" rx="3" stroke="#0f766e" stroke-width="2.5" fill="none"/>
+          <rect x="35" y="37.5" width="11" height="4" rx="2" fill="#94a3b8"/>
+        </svg>
+        <span>Tarefax</span>
+      </div>
+
+      <div class="tab-sim-dark">
+        <svg width="16" height="16" viewBox="0 0 64 64" fill="none">
+          <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#g2_lg)"/>
+          <rect x="12" y="11" width="40" height="43" rx="7" fill="#ffffff"/>
+          <rect x="23" y="6" width="18" height="9" rx="4.5" fill="#0b3b36"/>
+          <rect x="27" y="8" width="10" height="3" rx="1.5" fill="#5eead4"/>
+          <path d="M18 24 L22.5 28.5 L31 19.5" stroke="#0f766e" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="35" y="22" width="11" height="4" rx="2" fill="#64748b"/>
+          <rect x="18" y="34.5" width="10" height="10" rx="3" stroke="#0f766e" stroke-width="2.5" fill="none"/>
+          <rect x="35" y="37.5" width="11" height="4" rx="2" fill="#94a3b8"/>
+        </svg>
+        <span>Tarefax</span>
+      </div>
+    </div>
+
+    <!-- Opção 3: Prancheta Checklist 3 tarefas -->
+    <div class="card">
+      <h2>Opção 3: Lista com 3 Itens</h2>
+      <p style="font-size: 0.85rem; color: #64748b;">Visual clássico de lista de afazeres</p>
+      <div class="preview-box">
+        <div><small>64px</small><br>
+          <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+            <defs>
+              <linearGradient id="g3_lg" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#14b8a6"/>
+                <stop offset="100%" stop-color="#0f766e"/>
+              </linearGradient>
+            </defs>
+            <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#g3_lg)"/>
+            <rect x="12" y="11" width="40" height="43" rx="7" fill="#ffffff"/>
+            <rect x="23" y="6.5" width="18" height="8" rx="4" fill="#0b3b36"/>
+            <rect x="27" y="8.5" width="10" height="2.5" rx="1.25" fill="#5eead4"/>
+            <!-- Item 1 -->
+            <path d="M18 23 L22 27 L28.5 20" stroke="#0f766e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="33" y="21.5" width="12" height="3" rx="1.5" fill="#475569"/>
+            <!-- Item 2 -->
+            <path d="M18 33 L22 37 L28.5 30" stroke="#0f766e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="33" y="31.5" width="10" height="3" rx="1.5" fill="#475569"/>
+            <!-- Item 3 -->
+            <circle cx="23.5" cy="43" r="2.8" stroke="#94a3b8" stroke-width="2" fill="none"/>
+            <rect x="33" y="41.5" width="12" height="3" rx="1.5" fill="#cbd5e1"/>
+          </svg>
+        </div>
+      </div>
+      
+      <div class="tab-sim-light">
+        <svg width="16" height="16" viewBox="0 0 64 64" fill="none">
+          <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#g3_lg)"/>
+          <rect x="12" y="11" width="40" height="43" rx="7" fill="#ffffff"/>
+          <rect x="23" y="6.5" width="18" height="8" rx="4" fill="#0b3b36"/>
+          <rect x="27" y="8.5" width="10" height="2.5" rx="1.25" fill="#5eead4"/>
+          <path d="M18 23 L22 27 L28.5 20" stroke="#0f766e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="33" y="21.5" width="12" height="3" rx="1.5" fill="#475569"/>
+          <path d="M18 33 L22 37 L28.5 30" stroke="#0f766e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="33" y="31.5" width="10" height="3" rx="1.5" fill="#475569"/>
+          <circle cx="23.5" cy="43" r="2.8" stroke="#94a3b8" stroke-width="2" fill="none"/>
+          <rect x="33" y="41.5" width="12" height="3" rx="1.5" fill="#cbd5e1"/>
+        </svg>
+        <span>Tarefax</span>
+      </div>
+
+      <div class="tab-sim-dark">
+        <svg width="16" height="16" viewBox="0 0 64 64" fill="none">
+          <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#g3_lg)"/>
+          <rect x="12" y="11" width="40" height="43" rx="7" fill="#ffffff"/>
+          <rect x="23" y="6.5" width="18" height="8" rx="4" fill="#0b3b36"/>
+          <rect x="27" y="8.5" width="10" height="2.5" rx="1.25" fill="#5eead4"/>
+          <path d="M18 23 L22 27 L28.5 20" stroke="#0f766e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="33" y="21.5" width="12" height="3" rx="1.5" fill="#475569"/>
+          <path d="M18 33 L22 37 L28.5 30" stroke="#0f766e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="33" y="31.5" width="10" height="3" rx="1.5" fill="#475569"/>
+          <circle cx="23.5" cy="43" r="2.8" stroke="#94a3b8" stroke-width="2" fill="none"/>
+          <rect x="33" y="41.5" width="12" height="3" rx="1.5" fill="#cbd5e1"/>
+        </svg>
+        <span>Tarefax</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
