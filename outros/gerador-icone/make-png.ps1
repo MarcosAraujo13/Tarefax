@@ -1,6 +1,6 @@
 Add-Type -AssemblyName System.Drawing
 
-function Generate-FaviconPng {
+function New-FaviconPng {
     param(
         [string]$OutFile,
         [int]$Size = 64
